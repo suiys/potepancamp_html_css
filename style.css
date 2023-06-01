@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: #333;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+*, *::before, *::after {
+  word-break: break-all;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  color: #333;
+  line-height: 1.5;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 36px;
+  max-width: 100%;
+}
+
+.header-logo {
+  align-self: center;
+}
+
+.logo-for-pc {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.logo-for-smartphone {
+  display: none;
+  height: 16px;
+  width: auto;
+}
+
+.global-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.global-menu-content {
+  text-align: center;
+  margin-right: 45px;
+}
+
+.global-menu-content:last-of-type {
+  margin-right: 0;
+}
+
+.global-menu-content-link {
+  display: block;
+}
+
+.global-menu-content span {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.global-menu-content-link > span:first-child {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.global-menu-content-link > span:last-child {
+  font-size: 10px;
+}
+
+.global-menu-content-button {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #f79214;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 38px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.firstview {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+  width: 100%;
+}
+
+.firstview-image-for-smartphone {
+  display: none;
+}
+
+.firstview-container {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.firstview-contents {
+  width: fit-content;
+  margin-bottom: 70px;
+}
+
+.firstview-title {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+}
+
+.firstview-images {
+  margin-bottom: 25px;
+}
+
+.firstview-images > img {
+  margin-right: 8px;
+}
+
+.firstview-images > img:nth-of-type(2) {
+  width: 40%;
+}
+
+.firstview-images > img:last-of-type {
+  margin-right: 0;
+}
+
+.firstview-buttons {
+  display: flex;
+}
+
+.firstview-buttons a {
+  text-align: center;
+  height: 64px;
+  border-radius: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.firstview-buttons > a:first-child {
+  margin-right: 15px;
+  width: 306px;
+  background-color: #f79214;
+  color: #fff;
+}
+
+.firstview-buttons > a:last-child {
+  border: 1px solid #e0e0e0;
+  width: 176px;
+}
+
+.firstview-disclaimer {
+  color: #a2a2a4;
+  font-size: 12px;
+}
+
+.firstview-disclaimer > a {
+  color: #a2a2a4;
+}
+
+.about {
+  background-color: #f79214;
+  padding: 44px 0;
+}
+
+.about-container {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-video {
+  width: 50%;
+}
+
+.about-contents {
+  margin-left: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contents h2 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 54px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.about-contents h2 span {
+  font-family: 'Lato',sans-serif;
+}
+
+.about-contents p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.curriculum {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.curriculum > img {
+  margin-right: 5px;
+}
+
+/* PC・タブレット表示 */
+@media screen and (min-width: 768px) {
+  .header-logo {
+    transition: opacity .2s;
+  }
+
+  .header-logo:hover {
+    opacity: .8;
+  }
+
+  .global-menu-content {
+    transition: opacity .2s;
+  }
+
+  .global-menu-content:hover {
+    opacity: .8;
+  }
+
+  .firstview-buttons a {
+    transition: opacity .2s;
+  }
+
+  .firstview-buttons a:hover {
+    opacity: .8;
+  }
+}
+
+/* タブレット・スマホ表示 */
+@media screen and (max-width: 1080px) {
+  header {
+    background-color: #fff;
+    z-index: 10;
+    position: fixed;
+  }
+
+  .global-menu-list {
+    display: none;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+
+  .line-for-hamburger-menu {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 10px;
+    transform: translate(0, -50%);
+  }
+
+  .line-for-hamburger-menu:first-child {
+    top: 0;
+  }
+
+  .line-for-hamburger-menu:last-child {
+    top: 100%;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-video {
+    width: 75%;
+    margin-bottom: 16px;
+  }
+
+  .about-contents {
+    margin-left: 0;
+    width: 75%;
+  }
+}
+
+/* スマホ表示 */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 15px 0;
+  }
+
+  .header-container {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .logo-for-pc {
+    display: none;
+  }
+
+  .logo-for-smartphone {
+    display: block;
+  }
+
+  .firstview {
+    background-image: none;
+    padding-top: 52px;
+  }
+
+  .firstview-image-for-smartphone {
+    display: block;
+    width: 100%;
+  }
+
+  .firstview-container {
+    margin-top: -45vw;
+    padding: 0 20px;
+  }
+
+  .firstview-contents {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .firstview-title {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .firstview-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .firstview-images > img {
+    width: 27.5%;
+  }
+
+  .firstview-buttons {
+    flex-direction: column;
+  }
+
+  .firstview-buttons a:first-of-type {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .firstview-buttons a:last-of-type {
+    display: none;
+  }
+
+  .about {
+    padding: 30px 0;
+  }
+
+  .about-container {
+    padding: 0 20px;
+  }
+
+  .about-video {
+    width: 100%;
+  }
+
+  .about-contents {
+    width: 100%;
+  }
+
+  .about-contents h2 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
